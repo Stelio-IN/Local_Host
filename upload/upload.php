@@ -15,14 +15,21 @@
    $temp = explode('.',$file_name);
    $file_extension = $temp[count($temp)-1] ;
 
-   //verificar se a extensao e permitida
-   if($file_extension != 'PNG'){
-    die('Erro. Ficheiro invalido'); 
-   }
+   //criar um array e verificar os tipos permitidos
+    $extensions = array('png','jpeg','jpg','PNG');
+    if(!in_array($file_extension,$extensions)){
+        die('Erro. Ficheiro invalido'); 
+    }
+
    //verificar o tamanho
-   if($file_size>1000){
+   if($file_size>1500000){
     die('Erro. Tamanho do arquivo maior que o desejado');
    }
+   //finalizar o envio
+   $file = uniqid().'.'.$file_extension;
+   move_uploaded_file($_FILES['ficheiro']['tmp_name'], 'uploads/'.$_FILES['ficheiro']['name']);
+   //alterando o nome
+   move_uploaded_file($_FILES['ficheiro']['tmp_name'], 'uploads/'.$file);
 
    echo $file_extension . '<br>';
    #explode- divide a string apartir do '.'  
