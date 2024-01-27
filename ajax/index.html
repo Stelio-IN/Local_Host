@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.compat.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    
+    <p id="texto">Texto original</p>
+    <button onclick="alterar()"> Alterar</button>
+
+    <script>
+
+        function alterar(){
+
+            $.ajax({
+            type: 'GET',
+            url: 'resposta.php',
+            success: function (resp) {
+
+                var nomes = JSON.parse(resp)
+
+                $('#texto').text(nomes[1]['nome'] + " " +nomes[1]['apelido'] )
+            },
+            error: function () {}
+            });
+            
+        }
+    </script>
+</body>
+</html>
