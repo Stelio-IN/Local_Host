@@ -1,0 +1,6 @@
+Mim types
+image/jpeg,
+image/gif,
+image/png,
+image/pdf,
+image/x-eps
