@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.compat.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="text-center mt-5">    
+        <div id="resposta">
+            <img src="assets/img/spinner.gif" alt="Loading..." id="spinner"  style="display: none;">
+        <!--   <div class="spinner-border" id="spinner"  style="display: none;"></div> -->
+        </div>
+
+        <div class="mt-5">
+            <button class="btn btn-secondary" onclick="executar_pedido()" id="botao"> Fazer Pedido</button> 
+        </div>
+
+    </div>    
+
+    <script>
+
+        function executar_pedido(){
+            $.ajax({
+                type: 'GET',
+                url: 'resposta.php',
+                beforeSend: function(){
+                    //antes do pedido
+                    $('#spinner').show();
+                },
+                success: function(resp){
+                    $('#resposta').text(resp)
+                },
+                error: function(){
+                    console.log('Fatal Error!!!!')
+                },
+                complete: function(){
+                    //depois do pedido
+                    $('#spinner').hide();
+                    $('#botao').hide();
+                }
+            });
+
+         //   $('#resposta').text('Hello word');
+        }
+    </script>
+</body>
+</html>

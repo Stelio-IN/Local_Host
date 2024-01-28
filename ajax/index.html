@@ -12,24 +12,54 @@
 <body>
     
     <p id="texto">Texto original</p>
-    <button onclick="alterar()"> Alterar</button>
+    <button onclick="alterar()"> Alterar</button> 
 
     <script>
 
         function alterar(){
 
+
             $.ajax({
-            type: 'GET',
-            url: 'resposta.php',
-            success: function (resp) {
-
-                var nomes = JSON.parse(resp)
-
-                $('#texto').text(nomes[1]['nome'] + " " +nomes[1]['apelido'] )
-            },
-            error: function () {}
+                type: 'POST',
+                url: 'resposta.php',
+                data: {nome:0},
+                success: function (resp) {
+                    $('#texto').text(resp);
+                },
+                error: function () {
+                    console.log('Eroo')
+                }
             });
-            
+
+
+           /*
+           colocar valores e operacao  
+           $.ajax({
+                type: 'POST', 
+                url: 'resposta.php', //endpoint
+                data: {n1: 10, n2: 15, sn : 'mult' },  //informacao enviada para ese endpoint
+                success: function (resp) {
+                    console.log(resp);
+                },
+                error: function () {
+                    console.log('Erro');
+                }
+            });
+            */
+            /*
+            //tratando o array recebido do endpoint
+            $.ajax({
+                type: 'GET',
+                url: 'resposta.php',
+                success: function (resp) {
+
+                    var nomes = JSON.parse(resp)
+
+                    $('#texto').text(nomes[1]['nome'] + " " +nomes[1]['apelido'] )
+                },
+                error: function () {}
+            });
+            */
         }
     </script>
 </body>
