@@ -1,0 +1,25 @@
+Cookies são pequenos arquivos de texto armazenados no computador do usuário por meio do navegador da web.
+ Eles são usados para armazenar informações sobre as interações do usuário com um site específico.
+  Os cookies são uma parte fundamental da experiência na web moderna e desempenham vários papéis,
+incluindo:
+
+1. **Rastreamento de Sessão:** Os cookies são frequentemente usados para manter o controle das sessões dos usuários. 
+Isso permite que um site saiba se você está logado ou não e mantenha informações relevantes durante a sua visita.
+
+2. **Personalização:** Os cookies podem armazenar preferências do usuário, como configurações de idioma, layout da página,
+ temas, etc. Isso permite que um site forneça uma experiência mais personalizada.
+
+3. **Rastreamento de Atividade:** Empresas de análise e publicidade online usam cookies para rastrear a atividade do
+ usuário. Isso pode incluir informações sobre páginas visitadas, tempo gasto em um site, cliques em determinados elementos,
+  entre outros.
+
+4. **Carrinhos de Compras:** Em sites de comércio eletrônico, cookies são usados para rastrear os itens no carrinho de 
+compras do usuário, mesmo quando eles navegam por outras páginas ou fecham o navegador.
+
+5. **Autenticação:** Cookies são usados para autenticar usuários, permitindo que eles acessem áreas restritas do site 
+após o login.
+
+Os cookies têm um papel essencial na navegação na web moderna, facilitando a interação do usuário com os sites. No 
+entanto, há considerações de privacidade associadas ao uso de cookies. Alguns usuários optam por desativar ou limpar 
+regularmente os cookies para preservar a privacidade online. Para abordar preocupações de privacidade, muitos sites
+ agora informam os usuários sobre o uso de cookies e fornecem opções para gerenciar suas configurações de privacidade.
