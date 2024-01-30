@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+    <hr>
+ 
+    <script>
+       localStorage.setItem('nome','Stelio');
+       localStorage.setItem('idade','23');
+        /*
+        var dados = localStorage.getItem('nome');
+        console.log(dados);
+        document.write(dados);*/
+        if(localStorage.getItem('nome')!=null){
+            console.log('The value is: ' + localStorage.getItem('nome'));
+        }else{
+            console.log('O valor nao existe');
+        }
+       // localStorage.clear();
+          //  localStorage.removeItem('idade');
+    </script>
+
+</body>
+</html>
