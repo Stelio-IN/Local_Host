@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/loader.js"></script>
+</head>
+<body>
+    
+    <h3>Grafico de barras</h3>
+    <hr>
+    <div id="chart">
+
+    </div>
+
+    <script>
+
+        google.charts.load('current',{'packages':['corechart','bar']})
+        google.charts.setOnLoadCallback(desenhar);
+
+        function desenhar(){
+
+            var dados =  google.visualization.arrayToDataTable([
+                ['Genero','Numero',{role:'style'},{role: 'annotation'}],
+                ['Maculino',50,'red','M'],
+                ['femenino',60,'pink',"F"],
+            ])
+            var opcoes ={
+                width: 500,
+                height: 500,
+                legend: {
+                    position: 'none'
+                }
+            }
+            var chart= new google.visualization.ColumnChart(document.getElementById('chart'))
+            chart.draw(dados,opcoes)
+        }
+
+    </script>
+
+</body>
+</html>
