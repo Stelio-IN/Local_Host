@@ -76,7 +76,7 @@
                 language: {
                             info: 'pagina _PAGE_ de _PAGES_',
                             infoEmpty: 'Nao ha registros',
-                            infoFiltered: '(foltrando de _MAX_ registros)',
+                            infoFiltered: '(filtrando de _MAX_ registros)',
                             lengthMenu: 'Apresentar _MENU_ linhas por pagina',
                             zeroRecords: 'Nao ha registros'
                         }
