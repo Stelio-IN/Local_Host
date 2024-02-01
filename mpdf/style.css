@@ -1,0 +1,12 @@
+.estilo1{
+    font-family: 'verdana';
+    position: absolute;
+    left: 250px;
+    top: 300px;
+    font-size: 2em;
+}
+.estilo2{
+    text-align: center;
+    top: 400px;
+    color: blue;
+}
