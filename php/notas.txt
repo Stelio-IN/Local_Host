@@ -1,0 +1,1 @@
+<?= 'batatas'?>- mesmo que <?php echo 'batatas'?>

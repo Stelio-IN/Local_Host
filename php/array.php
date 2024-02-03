@@ -5,6 +5,10 @@
     $v1 = array(15,16,19,20);
     $v2 = [15,16,19,20];
 
+    for($i = 0; $i < sizeof($v1); $i++){
+        echo '{'.$v1[$i].'} ';
+    }
+    
     #adicionado valores e indices definidos
     $v3 =[
         2 => 100,
@@ -23,6 +27,30 @@
         'email' => 'stelioacaciomondlane@gmail.com',
         'telefone' => 842156451
     ];
-    echo $dados['nome'];
+    echo ' '.$dados['nome'];
+
+/* ---------------------------------- Arrays Mistos -----------------------------------------*/
+$dados = [
+    0 =>10,
+    'nome' => 'stelio',
+    1 => 15
+];
+
+/* ---------------------------------- Arrays Multidemensionais -----------------------------------------*/
+
+$dados = [
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11]
+];
+echo ' '.$dados[0][1];
+
+$cidades = [
+    'mocambique' => ['Maputo','gaza','sofala'],
+    'brasil' => ['Brazilia','Sao paulo', 'Rio de Janeiro']
+];
+echo '  Eu sou de'.' '.$cidades['mocambique'][0];
+
+
 
 
