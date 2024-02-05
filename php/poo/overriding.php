@@ -42,8 +42,27 @@ class Quadrado extends Retangulo
     }
 }
 
+//instaciando os objs e usando o metodo da classe pai
 $quadrado = new Quadrado(5);
 $retangulo = new Retangulo(5,4);
 echo 'Aredo do quadrado e: '.$quadrado->area();
 echo 'Aredo do Retangulo e: '.$retangulo->area();
 
+/* ----------------------------------------------------*/
+#Final- para impedir o override
+
+class Veiculo{
+    final function mover(){}
+}
+
+class Bicicleta extends Veiculo
+{
+    #a funcao nao pode ser sobscrita 
+   /* function mover(){
+
+    }*/
+}
+
+final class Teste{}
+#nao aceita devido ao atributo final 
+//class teste1 extends Teste{}

@@ -10,7 +10,7 @@
             <a href="index.php?p=inicio" class="p-2">Inicio</a>
             <a href="index.php?p=empresa" class="p-2">Empresa</a>
             <a href="index.php?p=servicos" class="p-2">Serviços</a>
-            <a href="index.php?p=contactos" class="p-2">Contactos</a>
+            <a href="index.php?p=login_sign" class="p-2">Entrar</a>
             <a href="index.php?p=area_reservada" class="p-2">Area Reservada</a>
             
         </div>

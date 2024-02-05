@@ -33,8 +33,9 @@
         case 'servicos':
             include'servicos.php';
             break;
-        case 'contactos':
-            include'contactos.php';
+        case 'login_sign':
+            $erro = false;
+            include'login_sign.php';
             break;
         case 'area_reservada':
             //verificar se houve submissa

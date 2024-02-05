@@ -7,8 +7,8 @@
    
     <div class="container m-3">
         <div class="row">
-            <div class="col-5 offset-5">
-            <h2>formulario login</h2>
+            <div class="col-7 ">
+            <h3>Ja tem conta? preencha os campos</h3>
                 <form action="?p=area_reservada" method="post">
                     <div class="form-group m-3">
                         <input type="text" name="text_usuario" placeholder="Usuario" class="form-control">
@@ -19,6 +19,7 @@
                 
                     <div class="text-center">
                         <input type="submit" value="Entrar" class="btn btn-primary m-3">
+                       <a href="http:cliente/formulario_registro.php">Criar conta</a>
                     </div>
                     <?php if($erro): ?>
                         <div class="alert alert-danger text-center" id="erro">
